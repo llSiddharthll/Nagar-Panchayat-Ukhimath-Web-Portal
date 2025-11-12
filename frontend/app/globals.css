@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --text: #070e11;
+  --background: #f3f9fb;
+  --primary: #33a3d0;
+  --secondary: #8bd0ed;
+  --accent: #48beed;
+}
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.goog-te-gadget img{
+  display: none;
+}
+
+.gallery-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -25px;
+}
+
+.gallery-swiper .swiper-button-prev{
+  left: -50px !important;
+}
+
+.gallery-swiper .swiper-button-next{
+  right: -50px !important;
+}
+
+.gallery-swiper :is(.swiper-button-prev, .swiper-button-next) svg{
+  height: auto;
+  width: auto;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
